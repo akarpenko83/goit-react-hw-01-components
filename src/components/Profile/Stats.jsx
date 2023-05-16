@@ -1,7 +1,4 @@
-import user from './user.json';
-
-export function Stats() {
-    const { stats: { followers, views, likes } } = user;
+export default function Stats({ followers, views, likes }) {
     return (
         <ul className='stats'>
             <li className='stats__item'>
@@ -18,5 +15,4 @@ export function Stats() {
             </li>
         </ul>
     )
-
 };

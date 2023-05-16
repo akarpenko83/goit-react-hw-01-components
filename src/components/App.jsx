@@ -1,17 +1,16 @@
 import { Profile } from "./Profile/Profile";
 export function App() {
   return (
-    <div
-      // style={{
-      //   height: '100vh',
-      //   display: 'flex',
-      //   justifyContent: 'center',
-      //   alignItems: 'center',
-      //   fontSize: 40,
-      //   color: '#010101'
-      // }}
+    <div className="task-1"
+      style={{
+        height: '100vh',
+        display: 'flex',
+        justifyContent: 'space-evenly',
+        alignItems: 'flex-start',
+        // fontSize: 40,
+        // color: '#010101'
+      }}
     >
-
       <Profile />
     </div>
   );

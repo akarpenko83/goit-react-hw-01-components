@@ -70,3 +70,9 @@
     font-weight: 600;
     color: black;
 }
+.name:hover,
+.avatar:hover,
+.profile:hover,
+.stats__item:hover {
+    transform: scale(1.05);
+}
