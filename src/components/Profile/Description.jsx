@@ -1,4 +1,5 @@
-export default function Description({ username, tag, location, avatar}) {
+import PropTypes from 'prop-types';
+export default function Description({ username, tag, location, avatar }) {
     return (
         <div className='description'>
         <img
@@ -12,4 +13,9 @@ export default function Description({ username, tag, location, avatar}) {
         <p className='location'>{location}</p>
         </div>
     )
+}
+Description.propTypes = {
+    username: PropTypes.string,
+    tag: PropTypes.string,
+    location: PropTypes.string,
 }

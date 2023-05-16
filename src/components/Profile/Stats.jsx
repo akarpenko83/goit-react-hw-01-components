@@ -1,3 +1,5 @@
+import PropTypes from 'prop-types';
+
 export default function Stats({ followers, views, likes }) {
     return (
         <ul className='stats'>
@@ -16,3 +18,9 @@ export default function Stats({ followers, views, likes }) {
         </ul>
     )
 };
+
+Stats.propTypes = {
+    followers: PropTypes.number,
+    views: PropTypes.number,
+    likes: PropTypes.number,
+}
