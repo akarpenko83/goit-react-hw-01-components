@@ -75,4 +75,5 @@
 .profile:hover,
 .stats__item:hover {
     transform: scale(1.05);
+    cursor: pointer;
 }
