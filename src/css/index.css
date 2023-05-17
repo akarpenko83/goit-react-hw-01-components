@@ -1,5 +1,2 @@
-@import '../../node_modules/modern-normalize/modern-normalize.css';
-@import './utils/reset.css';
+@import-normalize;
 @import './base/base.css';
-
-@import './components/profile.css';

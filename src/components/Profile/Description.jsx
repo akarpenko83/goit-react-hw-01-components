@@ -1,22 +1,23 @@
 import PropTypes from 'prop-types';
+import css from './profile.module.css';
 export default function Description({ username, tag, location, avatar }) {
     return (
-        <div className='description'>
+        <div className={css.description}>
         <img
             src={avatar}
             alt='User avatar'
-            className='avatar'
+            className={css.avatar}
             width="40%"
             />
-        <p className='name'>{username}</p>
-        <p className='tag'>{tag}</p>
-        <p className='location'>{location}</p>
+        <p className={css.name}>{username}</p>
+        <p className={css.tag}>{tag}</p>
+        <p className={css.location}>{location}</p>
         </div>
     )
 }
 Description.propTypes = {
-    username: PropTypes.string,
-    tag: PropTypes.string,
-    location: PropTypes.string,
-    avatar: PropTypes.string,
+    username: PropTypes.string.isRequired,
+    tag: PropTypes.string.isRequired,
+    location: PropTypes.string.isRequired,
+    avatar: PropTypes.string.isRequired,
 }

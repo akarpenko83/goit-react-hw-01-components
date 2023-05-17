@@ -1,26 +1,27 @@
 import PropTypes from 'prop-types';
+import css from './profile.module.css';
 
 export default function Stats({ followers, views, likes }) {
     return (
-        <ul className='stats'>
-            <li className='stats__item'>
-                <span className='label'>Followers</span>
-                <span className='quantity'>{followers}</span>
+        <ul className={css.stats}>
+            <li className={css.stats__item}>
+                <span className={css.label}>Followers</span>
+                <span className={css.quantity}>{followers}</span>
             </li>
-            <li className='stats__item'>
-                <span className='label'>Views</span>
-                <span className='quantity'>{views}</span>
+            <li className={css.stats__item}>
+                <span className={css.label}>Views</span>
+                <span className={css.quantity}>{views}</span>
             </li>
-            <li className='stats__item'>
-                <span className='label'>Likes</span>
-                <span className='quantity'>{likes}</span>
+            <li className={css.stats__item}>
+                <span className={css.label}>Likes</span>
+                <span className={css.quantity}>{likes}</span>
             </li>
         </ul>
     )
 };
 
 Stats.propTypes = {
-    followers: PropTypes.number,
-    views: PropTypes.number,
-    likes: PropTypes.number,
+    followers: PropTypes.number.isRequired,
+    views: PropTypes.number.isRequired,
+    likes: PropTypes.number.isRequired,
 }
