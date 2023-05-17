@@ -1,19 +1,23 @@
+import data from '../data/data.json';
+import friends from '../data/friends.json';
+
 import Profile from "./Profile/Profile";
 import Statistics from "./Statistics/Statistics";
-import data from '../data/data.json';
+import FriendList from './FriendList/FriendList';
+
 
 export default function App() {
   return (
     <div
       style={{
-        height: '100vh',
+        // height: '100vh',
         display: 'flex',
         flexDirection: 'column',
-        alignItems: 'flex-start',
       }}
     >
       <Profile />
       <Statistics title="Upload stats" data={data} />
+      <FriendList friends={friends} />  
 
     </div>
     

@@ -3,6 +3,7 @@
     flex-direction: column;
     outline: solid 1px lightgray;
     margin: 0 auto;
+    margin-bottom: 50px;
     justify-content: flex-end;
     width: 280px;
     height: 380px;
