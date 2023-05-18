@@ -13,8 +13,8 @@ export default function FriendListItem({id, avatar, isOnline, name}) {
                 isOnline && css.green,
                 !isOnline && css.red,
             )}></span>
-            <img className="avatar" src={avatar} alt="User avatar" width="48" />
-            <p className="name">{name}</p>
+            <img className={css.avatar} src={avatar} alt="User avatar" width="48" />
+            <p className={css.name}>{name}</p>
         </li>
     
    )

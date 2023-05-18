@@ -3,7 +3,6 @@ import css from './statistics.module.css';
 import generateRandomColor from 'utils/random-color';
 
 export default function Statistics(props) {
-    console.dir(props.data);
     return (
         <section className={css.statistics}>
             {props.title && <h2 className={css.title}>{props.title}</h2>}
